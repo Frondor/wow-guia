@@ -1,0 +1,652 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0 }
+ol, ul { list-style-type: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/*end reset*/
+html { min-width: 1006px; }
+#wrapper {
+width: 1006px;
+margin: 0 auto;
+position: relative;
+}
+body { background: #000 url("../img/body-bg-baked.jpg?v=47") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
+
+@media (max-width: 1920px) {
+	body { background-image: url("../img/body-bg-baked-1920px.jpg?v=47") }
+}
+@media (max-width: 1680px) {
+	body { background-image: url("../img/body-bg-baked-1680px.jpg?v=47") }
+}
+@media (max-width: 1440px) {
+	body { background-image: url("../img/body-bg-baked-1440px.jpg?v=47") }
+}
+@media (max-width: 1280px) {
+	body { background-image: url("../img/body-bg-baked-1280px.jpg?v=47") }
+}
+@media (max-width: 1024px) {
+  body { background-image: url("../img/body-bg-baked-1024px.jpg?v=47") }
+}
+a { color: #ffb100;outline: none;text-decoration: none;}
+a:hover { color: #FFF !important }
+#right a { color: #bd8100 }
+#right a:hover { color: #FFF }
+.clear, .clear:before, .clear:after {
+clear: both;
+display: table;
+content: '';
+}
+.clear {
+clear: both;
+display: block;
+margin: 0;
+padding: 0;
+}
+.float-left {
+float: left;
+}
+.ui-button {
+margin-left: 3px;
+color: #ffa800;
+}
+.ui-button, .ui-cancel {
+background: none;
+border: 0;
+cursor: pointer;
+display: inline-block;
+height: auto;
+overflow: visible;
+padding: 0;
+margin: 0;
+vertical-align: middle;
+outline: none;
+text-align: center;
+white-space: nowrap;
+cursor: pointer;
+font-family: Arial, sans-serif;
+}
+.ui-button span, .ui-cancel span {
+outline: none;
+display: inline-block;
+background-repeat: no-repeat;
+}
+.ui-button .button-left, .ui-button .button-right {
+overflow: hidden;
+}
+.button2 .button-left {
+background-position: 0 0;
+}
+.button2 span {
+background-image: url("../img/button-2.png");
+background-repeat: no-repeat;
+color: #ffae00;
+}
+.button2 span, .button3 span {
+padding: 0 0 0 13px;
+height: 30px;
+line-height: 30px;
+font-size: 11px;
+}
+.button2 .button-right {
+background-position: right -123px;
+}
+.ui-button .button-left, .ui-button .button-right {
+overflow: hidden;
+}
+.button2 span span, .button3 span span {
+padding: 0 13px 0 0;
+}
+.button2 span, .button3 span {
+padding: 0 0 0 13px;
+height: 30px;
+line-height: 30px;
+font-size: 11px;
+}
+.button2.hover span,
+.button2:hover span { color: #fff }
+.button2:hover .button-left { background-position:0 -41px; }
+.button2:hover .button-right { background-position: right -164px; }
+#content {
+position: relative;
+background-color: #1a0f08 !important;
+margin: 0 6px;
+}
+#content .content-bot {
+padding: 0;
+position: relative;
+background: url("../img/content-topbot.jpg") -992px bottom no-repeat;
+min-height: 600px;
+}
+.guide-top-nav {background: url("../img/bg-guide-menu.png") 0 0 no-repeat; width: 943px; height: 118px; margin: 0 auto 43px auto; padding: 11px; }
+.guide-top-nav a {display:block; float:left; width:188px; height:118px; position:relative;}
+.guide-top-nav a:hover, .guide-top-nav a.selected {background-image:url("../img/bg-guide-menu.png"); background-repeat:no-repeat;}
+.guide-top-nav a span {font-size:15px; line-height:17px; position:absolute; bottom:17px; left:13px; width:120px;}
+.guide-top-nav a em {font-style:normal;}
+.guide-top-nav a.selected {cursor:default;}
+.guide-top-nav a.selected span {color:#fff;}
+.guide-top-nav a .chapter-mark {display:block;}
+.guide-top-nav a.btn-que-es-wow:hover {background-position:-11px -151px;}
+.guide-top-nav a.btn-empezando:hover {background-position:-199px -151px;}
+.guide-top-nav a.btn-como-jugar:hover {background-position:-387px -151px;}
+.guide-top-nav a.btn-jugando-juntos:hover {background-position:-575px -151px;}
+.guide-top-nav a.btn-juego-avanzado:hover {background-position:-763px -151px;}
+.guide-top-nav a.btn-que-es-wow.selected {background-position:-11px -291px;}
+.guide-top-nav a.btn-empezando.selected {background-position:-199px -291px;}
+.guide-top-nav a.btn-como-jugar.selected {background-position:-387px -291px;}
+.guide-top-nav a.btn-jugando-juntos.selected {background-position:-575px -291px;}
+.guide-top-nav a.btn-juego-avanzado.selected {background-position:-763px -291px;}
+
+.guide-intro-part {min-height:544px;}
+.guide-intro-part p {width:421px;}
+.guide-intro-part {width:100%; padding-bottom:74px;}
+.guide-section-title a {border-right:1px solid #3f301b; display:inline-block; font-size:14px; line-height:15px; padding-right:9px; margin-left:50px;}
+.guide-section-title em {font-size:14px; line-height:15px; color:#e9bd7f; display:inline-block; margin-left:8px; font-style:normal;}
+.guide-section-title h4 {color:#efe3d2; font:normal 52px/61px Palatino Linotype, Sans-serif; letter-spacing:-2px; margin-left:50px; margin-top:3px; text-shadow: 0 0 5px #241209; color: #EFE3D2; }
+
+.guide-intro-text {margin-left:50px; width:430px; color:#b79855; font-size:16px; line-height:30px;}
+.guide-intro-text p strong {display:block; color:#efe3d2; text-transform:uppercase; font-weight:normal;}
+.guide-intro-text p {margin:30px 0 0 0;}
+
+.guide-sub-desc {color:#e9bd7f; font-size:12px; line-height:22px; margin-left:50px;}
+.guide-sub-desc p {margin:0; padding-bottom:24px;}
+.guide-detail-desc {color:#967648; font-size:12px; line-height:18px; margin:0 0 13px 0;}
+
+.guide-content-title {color:#efe3d2; font:normal 28px/29px Palatino Linotype, Sans-serif; margin:0 0 48px 0; padding-left:50px; display:block;}
+.guide-content-subtitle {color:#f3ecc7; font:normal 16px Palatino Linotype, Sans-serif; margin-left:50px; letter-spacing:1.3px; text-transform:uppercase;}
+
+/* box sections */
+.box { position: relative; color: #967648; min-height: 200px; clear: both; }
+.box.intro { color: #e9bd7f; line-height: 200%; height: auto; min-height: inherit; }
+.box.box-left { padding: 0 525px 100px 50px; }
+.box.box-right { padding: 0 50px 100px 525px; }
+.box .guide-content-subtitle { margin: 0 0 10px 0; padding: 0 0 0 55px; height: 45px; }
+.box .guide-content-subtitle.single-line { line-height: 41px; }
+.box .media-frame { position: absolute; top: 0; }
+.box-left .media-frame { right: 50px; }
+.box-right .media-frame { left: 50px; }
+
+/* media frame */
+.media-frame { display: inline-block; width: auto; border-collapse: collapse; -moz-box-shadow: #000 0 0 10px; -moz-border-radius: 10px; -webkit-box-shadow: #000 0 0 10px; -webkit-border-radius: 10px; box-shadow: #000 0 0 10px; border-radius: 10px; }
+.media-frame .tl,
+.media-frame .tr,
+.media-frame .bl,
+.media-frame .br { width: 11px; height: 11px; background: url("../img/mediaframe/media-frame-corners.gif") no-repeat; }
+.media-frame .tr { background-position: -11px 0; }
+.media-frame .bl { background-position: 0 -11px; }
+.media-frame .br { background-position: -11px -11px; }
+.media-frame .tm,
+.media-frame .bm { height: 11px; background: url("../img/mediaframe/media-frame-tb.gif") 0 0 repeat; }
+.media-frame .bm { background-position: 0 -11px; }
+.media-frame .ml,
+.media-frame .mr { width: 11px; background: url("../img/mediaframe/media-frame-lr.gif") 0 0 repeat; }
+.media-frame .mr { background-position: -11px 0; }
+.media-frame .mm { background: #000; }
+.media-frame .mm img { display: block }
+.media-frame.clickable { cursor: pointer; }
+.media-frame .caption { padding: 15px 10px 5px 10px; background: url("../img/mediaframe/media-frame-tb.gif") 0 -11px repeat-x; margin: 0 -2px; }
+.media-frame .view-all { float: right; padding-right: 17px; background: url("../img/mediaframe/bullet.gif") 100% 50% no-repeat }
+.media-frame .magnifying-wrapper { position:relative }
+.media-frame .magnifying-wrapper .magnifying-glass { position:absolute; display:block; width:63px; height:51px; top:-18px; right:-14px; background:url("../img/mediaframe/ui.png") -81px -156px no-repeat }
+.media-frame:hover .magnifying-wrapper .magnifying-glass,
+.media-frame .magnifying-wrapper:hover .magnifying-glass { background-position:-81px -207px }
+
+.guide-page-nav { background: url("../img/bg-guide-bottom-nav.jpg") no-repeat; height:84px; width:890px; margin:0 auto; position:relative; text-align:center }
+.guide-page-nav .current-guide-title {color:#f0e29a; font-size:13px; position:relative; top:36px }
+.guide-page-nav .nav-buttons {position:absolute; top:24px; left:0; width:100%;}
+.guide-page-nav .nav-buttons a {-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px #000 }
+.guide-page-nav .nav-buttons a span span {background:none; background-repeat:no-repeat; display:block; height:49px; line-height:47px; font-size:13px }
+.guide-page-nav .nav-buttons .prev {background: url("../img/bg-guide-bottom-nav-pre.gif") 0 0 no-repeat; display:block; float:left }
+.guide-page-nav .nav-buttons .prev span {background: url("../img/bg-guide-bottom-nav-pre.gif") 100% -49px no-repeat; display:block; margin-left:52px }
+.guide-page-nav .nav-buttons .prev span span {background-position: 100% 0; margin:0; padding-right:39px }
+.guide-page-nav .nav-buttons .prev:hover {background-position:0 -98px }
+.guide-page-nav .nav-buttons .prev:hover span {background-position:100% -147px }
+.guide-page-nav .nav-buttons .prev:hover span span {background-position:100% -49px }
+.guide-page-nav .nav-buttons .next {background: url("../img/bg-guide-bottom-nav-next.gif") 100% 0 no-repeat; display:block; float:right }
+.guide-page-nav .nav-buttons .next span {background: url("../img/bg-guide-bottom-nav-next.gif") 0 -49px no-repeat; display:block; margin-right:62px }
+.guide-page-nav .nav-buttons .next:hover {background-position:100% -98px }
+.guide-page-nav .nav-buttons .next:hover span {background-position:0 -147px }
+.guide-page-nav .nav-buttons .next span span {background-position: 0 0; margin:0; padding-left:46px }
+.guide-page-nav .nav-buttons .next:hover span span {background-position:0 -49px }
+
+/* fancybox */
+/* blackout */
+#blackout { width: 100%; height: 100%; top: 0; left: 0; background: #000; opacity: .7; display: none; position: fixed; z-index: 9001; }
+.ie #blackout { position: absolute; filter: alpha(opacity=70) }
+#blackout.blackout-transparent { background: transparent; }
+#lightbox-anchor #flash-error { padding-top:60px }
+.support-shim { display: block; z-index: -1; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0); }/* wow factions */
+.wow-faction-0, .wow-faction-0 a { color: #0078ff !important; } /* alliance */
+.wow-faction-1, .wow-faction-1 a { color: #b30000 !important; } /* horde */
+
+/* QUE ES WOW */
+.que-es-wow #content .content-top {background: url("../img/bg-p-01.jpg") 0 0 no-repeat;}
+
+.que-es-wow .ie67 .zh-tw .guide-content-title { zoom: 1; }
+
+.que-es-wow .part1-div  { background: url("../img/bg-p-02.jpg") 100% 0 no-repeat; min-height:1325px;}
+.que-es-wow .part2-div  { background: url("../img/bg-p-03.jpg") 100% 0 no-repeat; min-height:842px;}
+.que-es-wow .part3-div  { background: url("../img/bg-p-04.jpg") 100% 0 no-repeat; min-height:911px;}
+.que-es-wow .part4-div  { background: url("../img/bg-p-05.jpg") 100% 0 no-repeat; min-height:1546px;}
+.que-es-wow .part5-div  { background: url("../img/bg-p-06.jpg") 100% 0 no-repeat; min-height:50px;}
+
+.que-es-wow .part1-div  .part1-desc01 {width:421px; margin-left:50px;}
+.que-es-wow .part1-div  .part1-detail {width:100%;}
+.que-es-wow .part1-div  .part1-detail .multiplayer, .part1-div  .part1-detail .role-playing {width:421px; margin-left:50px; float:left;}
+.que-es-wow .part1-div  .part1-detail .role-playing {margin:59px 0 0 50px;}
+.que-es-wow .part1-div  .part1-detail .online {width:421px; margin:46px 50px 0 0; float:right;}
+.que-es-wow .part1-div  .guide-content-subtitle {margin-left:0; line-height:35px; padding-top:9px; display:block; letter-spacing:0;}
+.que-es-wow .part1-div  .part1-desc02 {width:421px; margin-right:50px;}
+
+.que-es-wow .part2-desc01, .que-es-wow .part2-desc02 {width:421px;}
+.que-es-wow .part2-desc02 {float:left; margin:24px 0 0 50px;}
+.que-es-wow .part2-desc03 {width:421px; float:right; margin:28px 50px 0 0;}
+.que-es-wow .part2-desc02 em {display:block; font-size:11px; line-height:13px; font-style:normal; color:#b94829;}
+.que-es-wow .part2-div  .guide-content-subtitle {margin:0;}
+.que-es-wow .part2-div  .race-alliance {margin-top:18px; padding:8px 0 0 146px; min-height:149px; background: url("../img/flag-alliance.gif") 0 0 no-repeat; }
+.que-es-wow .part2-div  .race-horde {position:relative; top:-16px; padding:14px 140px 0 0; min-height:160px; background: url("../img/flag-horde.gif") right 0 no-repeat;}
+
+
+.que-es-wow .part3-desc01 {width:421px; margin-left:50px; float:left;}
+.que-es-wow .part3-desc02 {width:360px; float:right; margin-right:75px; position:relative; top:401px;}
+.que-es-wow .part3-desc01 .media-frame {margin-top:40px;}
+.que-es-wow .part3-desc02 .guide-detail-desc p {margin:0; padding-bottom:18px;}
+.que-es-wow .part3-desc02 .guide-content-subtitle {margin-left:0;}
+.que-es-wow .part3-desc02 em {display:block; font-size:11px; line-height:13px; font-style:normal; color:#b94829; text-transform:uppercase;}
+.que-es-wow .part3-desc02 .guide-content-subtitle {margin:0 0 21px 0; letter-spacing:0; display:block;}
+.que-es-wow .part3-desc02 .guide-content-subtitle span {text-transform:capitalize;}
+
+.que-es-wow .part4-div  {position:relative;}
+.que-es-wow .part4-div .part4-desc01 {width:421px;}
+.que-es-wow .part4-div  .guide-content-subtitle {margin:0; background-position:0 0 !important; background-repeat:no-repeat !important; line-height:43px; display:block; padding-left:50px;}
+.que-es-wow .part4-div  .guide-detail-desc  {padding-bottom:1px;}
+.que-es-wow .part4-desc02 {width:360px; position:absolute; top:578px; left:550px;}
+.que-es-wow .part4-desc03 {width:360px; position:absolute; top:968px; left:80px;}
+
+.que-es-wow .part5-desc01 {width:421px;}
+
+.que-es-wow .pt-br .part4-div .guide-content-title { margin-bottom: 20px; }
+
+/* EMPEZANDO */
+.empezando #content .content-top { background: url("../img/guia-empezando/bg-page-top.jpg") 0 0 no-repeat; }
+
+.empezando .guide-intro-part {min-height:610px;}
+
+.empezando p {width:428px; margin:0;}
+.empezando .ui-button {margin-left:3px;}
+
+.empezando .step1-div {background: url("../img/guia-empezando/bg-contents-p-01.jpg") 100% 0 no-repeat; width:100%;}
+.empezando .step1-div .left-col {width:480px; float:left;}
+.empezando .step1-div .right-col {width:421px; float:left;}
+.empezando .step1-div .sever-type-list {margin-left:46px;}
+.empezando .step1-div .choose-realm-desc .media-frame {margin:21px 0 20px 0;}
+.empezando .step1-div .sever-type-list .guide-sub-desc {margin:0;}
+.empezando .step1-div .sever-type-list ul {margin:30px 0 0 26px; width:364px;}
+.empezando .step1-div .sever-type-list ul li {color:#967648; font-size:12px; line-height:18px; margin-bottom:30px;}
+.empezando .step1-div .sever-type-list ul li span {color:#e9bd7f; font:normal 20px/29px Palatino Linotype, serif; display:block; margin-bottom:4px;}
+.empezando .step1-div .sever-type-list ul li em {color:#b94829; font:normal 11px Arial, Sans-serif; display:inline-block; margin-left:10px;}
+.empezando .step1-div .wrapper {background: url("../img/guia-empezando/bg-p-01.jpg") 100% 100% no-repeat; width:100%; }
+.empezando .step1-div  .raf-desc {width:421px; margin:58px 10px 0 0; font-size:12px; line-height:22px; min-height:300px;}
+.empezando .step1-div  .raf-desc p {margin:35px 0 0 50px; padding-bottom:24px;}
+.empezando .step1-div  .interface {width:100%; height:613px; background: url("../img/guia-empezando/bg-contents-p-02.jpg") 100% 100% no-repeat; position:relative;}
+.empezando .step1-div  .interface .guide-content-subtitle {padding-top:33px; margin-left:71px; display:block;}
+.empezando .step1-div  .interface .media-frame {position:absolute; top:79px; left:72px; }
+.empezando .step1-div  .interface #interface-viewer {width:642px; height:405px; background: url("../img/guia-empezando/bg-interface-box.jpg") 0 0 no-repeat;}
+.empezando .step1-div  .interface #interface-viewer a { cursor: help; background:none; position:absolute; display:block;}
+.empezando .step1-div  .interface #interface-viewer a:hover, .empezando .step1-div  .interface #interface-viewer a.over {background: url("../img/guia-empezando/interface-divs.jpg") 0 0 no-repeat;}
+.empezando .step1-div  .interface #interface-viewer #div01 {top:16px; left:16px; width:107px; height:189px;}
+.empezando .step1-div  .interface #interface-viewer #div02 {top:212px; left:16px; width:107px; height:35px;}
+.empezando .step1-div  .interface #interface-viewer #div03 {top:254px; left:16px; width:107px; height:46px;}
+.empezando .step1-div  .interface #interface-viewer #div04 {top:307px; left:16px; width:107px; height:105px;}
+.empezando .step1-div  .interface #interface-viewer #div05 {top:307px; left:129px; width:44px; height:105px;}
+.empezando .step1-div  .interface #interface-viewer #div06 {top:349px; left:290px; width:98px; height:63px;}
+.empezando .step1-div  .interface #interface-viewer #div07 {top:70px; right:14px; width:113px; height:155px;}
+.empezando .step1-div  .interface #interface-viewer #div08 {top:232px; right:14px; width:113px; height:155px;}
+.empezando .step1-div  .interface #interface-viewer #div01:hover, .empezando .step1-div  .interface #interface-viewer #div01.over {background-position:0 0;}
+.empezando .step1-div  .interface #interface-viewer #div02:hover, .empezando .step1-div  .interface #interface-viewer #div02.over {background-position:0 -196px;}
+.empezando .step1-div  .interface #interface-viewer #div03:hover, .empezando .step1-div  .interface #interface-viewer #div03.over {background-position:0 -238px;}
+.empezando .step1-div  .interface #interface-viewer #div04:hover, .empezando .step1-div  .interface #interface-viewer #div04.over {background-position:0 -291px;}
+.empezando .step1-div  .interface #interface-viewer #div05:hover, .empezando .step1-div  .interface #interface-viewer #div05.over {background-position:100% 100%;}
+.empezando .step1-div  .interface #interface-viewer #div06:hover, .empezando .step1-div  .interface #interface-viewer #div06.over {background-position:-108px 0;}
+.empezando .step1-div  .interface #interface-viewer #div07:hover, .empezando .step1-div  .interface #interface-viewer #div07.over {background-position:-108px -79px;}
+.empezando .step1-div  .interface #interface-viewer #div08:hover, .empezando .step1-div  .interface #interface-viewer #div08.over {background-position:-108px -241px;}
+.empezando #interface-list {position:absolute; right:67px; top:81px; width:173px;}
+.empezando #interface-list span { background: url("../img/guia-empezando/interface-numbers.gif") 0 0 no-repeat; padding-left:27px; font-size:12px; line-height:30px; display:block;}
+.empezando #interface-list .l-01 {background-position:0 8px;}
+.empezando #interface-list .l-02 {background-position:0 -30px;}
+.empezando #interface-list .l-03 {background-position:0 -68px;}
+.empezando #interface-list .l-04 {background-position:0 -104px;}
+.empezando #interface-list .l-05 {background-position:0 -142px;}
+.empezando #interface-list .l-06 {background-position:0 -180px;}
+.empezando #interface-list .l-07 {background-position:0 -218px;}
+.empezando #interface-list .l-08 {background-position:0 -256px;}
+
+
+.empezando .step2-div {background: url("../img/guia-empezando/bg-p-04.jpg") 100% 0 no-repeat;}
+.empezando .races-list {width:904px; height:355px; background: url("../img/guia-empezando/bg-contents-p-03.jpg") 0 0 no-repeat; margin:0 auto;}
+.empezando .step2-div .guide-sub-desc {min-height:268px;}
+.empezando .step2-div .races-group {width:421px; height:235px;}
+.empezando .step2-div .races-group .guide-content-subtitle {margin-left:20px; line-height:78px;}
+.empezando .step2-div .alliance-group {float:left; min-height:228px; margin-left:6px; padding-top:5px;}
+.empezando .step2-div .horde-group {float:right; min-height:228px; margin-right:0; padding-top:5px;}
+.empezando .step2-div .races-group  ul {margin-left:20px;}
+.empezando .step2-div .races-group  ul li, .empezando .step3-div .class-group ul li {width:129px; display:block; float:left; margin-bottom:22px;}
+.empezando .step2-div .races-group  ul li span, .empezando .step3-div .class-group ul li span {display:block; float:left; line-height:30px;}
+.empezando .step2-div .races-group  ul li .list-title, .empezando .step3-div .class-group ul li .list-title {padding-left:10px; width:70px; line-height:17px;}
+
+.empezando .step3-div {background: url("../img/guia-empezando/bg-p-05.jpg") 100% 0 no-repeat; min-height:930px;}
+.empezando .step3-div .content-col-left {float:left; width:495px;}
+.empezando .step3-div .content-col-right {float:right; width:488px;}
+.empezando .step3-div .class-group {background: url("../img/guia-empezando/bg-contents-p-04.jpg") 0 12px no-repeat; width:434px; height:441px; margin-left:45px; padding-top:12px;}
+.empezando .step3-div .class-group .guide-content-subtitle {margin-left:27px; line-height:78px;}
+.empezando .step3-div .class-group ul {margin:0 0 30px 27px;}
+.empezando .step3-div .class-group ul li .list-title {width:70px; line-height:19px;}
+
+.empezando .step3-div .content-col-right .guide-content-subtitle {margin:0;}
+.empezando .step3-div .class-role .guide-detail-desc p {display:block;}
+.empezando .step3-div .class-role .class-role-title {margin:0 0 10px 0; padding-left:53px; line-height:43px; display:block; font-size:16px; text-transform:uppercase; color:#e9bd7f;}
+.empezando .step3-div .class-role .tank .class-role-title {background: url("../img/guia-empezando/icon-class-role-tank.gif") 0 0 no-repeat;}
+.empezando .step3-div .class-role .healer .class-role-title {background: url("../img/guia-empezando/icon-class-role-healer.gif") 0 10px no-repeat; padding-top:10px;}
+.empezando .step3-div .class-role .dealer .class-role-title {background: url("../img/guia-empezando/icon-class-role-dealer.gif") 0 0 no-repeat;}
+
+.empezando .step3-div .class-role .tank {background: url("../img/guia-empezando/class-role-tank.png") 100% 0 no-repeat; min-height:256px; margin-top:18px;}
+.empezando .step3-div .class-role .tank .guide-detail-desc p {width:223px;}
+.empezando .step3-div .class-role .healer {padding-left:222px; background: url("../img/guia-empezando/class-role-healer.png") 0 0 no-repeat; min-height:234px;}
+.empezando .step3-div .class-role .healer .guide-detail-desc p {width:215px;}
+.empezando .step3-div .class-role .dealer {background: url("../img/guia-empezando/class-role-dealer.png") 257px 0 no-repeat; min-height:249px; margin-top:45px;}
+.empezando .step3-div .class-role .dealer .guide-detail-desc p {width:220px;}
+
+
+.empezando .step4-div {background: url("../img/guia-empezando/bg-p-06.jpg") 100% 0 no-repeat; min-height:559px;}
+.empezando .step5-div {background: url("../img/guia-empezando/bg-p-07.jpg") 100% 0 no-repeat; min-height:299px;}
+
+/* framed icons */
+.empezando .icon-frame { display: inline-block; overflow: hidden; padding: 1px; background-color: #000; background-position: 1px 1px; background-repeat: no-repeat; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #434445; border-bottom-color: #2f3032; border-top-color: #b1b2b4; }
+.empezando .icon-frame img { display: block; vertical-align: bottom; }
+.empezando .icon-frame.frame-36,
+.empezando .icon-frame.frame-50,
+.empezando .icon-frame.frame-56 { height: 56px; width: 56px; -moz-box-shadow: #000 0 0 10px; -webkit-box-shadow: #000 0 0 10px; box-shadow: #000 0 0 10px; }
+.empezando .icon-frame.frame-12 { height: 12px; width: 12px; }
+.empezando .icon-frame.frame-14 { height: 14px; width: 14px; }
+.empezando .icon-frame.frame-18 { height: 18px; width: 18px; }
+.empezando .icon-frame.frame-27 { height: 27px; width: 27px; }
+.empezando .icon-frame.frame-36 { height: 36px; width: 36px; }
+.empezando .icon-frame.frame-50 { height: 50px; width: 50px; }
+.empezando .icon-frame-gloss { display: block; height: 76px; width: 76px; background-position: 50% 50%; background-repeat: no-repeat; }
+.empezando .icon-frame-gloss .frame { display: block; background: url("../imag/guia-empezando/frame-icon.png") no-repeat; height: 76px; width: 76px; }
+.empezando .circle-frame { border-width: 2px; border-left-color: #B1B2B4; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.empezando .table .icon-frame { vertical-align: middle; }
+
+/* COMO JUGAR */
+.como-jugar #content .content-top { background: url("../img/guia-como-jugar/bg-page-top.jpg") 0 0 no-repeat; }
+.como-jugar .clear { padding-bottom:20px; }
+
+.como-jugar .interface {width:100%; height:595px; background: url("../img/guia-como-jugar/bg-contents-p-02.jpg") 100% 100% no-repeat; position:relative;}
+.como-jugar .interface .guide-content-subtitle {padding-top:33px; margin-left:70px; display:block;}
+.como-jugar .interface #interface-viewer {width:642px; height:405px; position:absolute; top:80px; left:83px;}
+
+.como-jugar .interface #interface-viewer div {cursor: help; background: url("../img/guia-como-jugar/interface-divs.jpg") 0 0 no-repeat; position:absolute;}
+.como-jugar .interface #interface-viewer div.hidden { background-position:1000%; }
+
+.como-jugar .interface #interface-viewer .div01 {top:1px; 	left:2px; 	background-position:-1px -1px; 		width:55px; height:68px;}
+.como-jugar .interface #interface-viewer .div02 {top:24px; 	left:57px; 	background-position:-56px -24px; 	width:95px; height:12px;}
+.como-jugar .interface #interface-viewer .div03 {top:32px; 	left:56px; 	background-position:-55px -32px; 	width:95px; height:13px;}
+.como-jugar .interface #interface-viewer .div04 {top:24px; 	left:158px;	background-position:-157px -24px; 	width:94px; height:11px;}
+.como-jugar .interface #interface-viewer .div05 {top:35px; 	left:158px;	background-position:-157px -35px; 	width:94px; height:10px;}
+.como-jugar .interface #interface-viewer .div06 {top:4px;  	left:253px;	background-position:-252px -4px;	width:54px; height:52px;}
+.como-jugar .interface #interface-viewer .div07 {top:4px;		left:545px;	background-position:-544px -4px; 	width:96px; height:93px;}
+.como-jugar .interface #interface-viewer .div08 {top:350px;	left:49px;	background-position:-48px -350px;	width:129px; height:26px;}
+.como-jugar .interface #interface-viewer .div09 {top:376px; 	left:49px;	background-position:-48px -376px; 	width:282px; height:29px;}
+.como-jugar .interface #interface-viewer .div10 {top:376px;	left:333px;	background-position:-332px -376px;	width:148px; height:29px;}
+.como-jugar .interface #interface-viewer .div11 {top:376px;	left:488px;	background-position:-487px -376px; 	width:107px; height:29px;}
+.como-jugar .interface #interface-viewer .div12 {top:342px;	left:571px;	background-position:-570px -342px; 	width:69px; height:32px;}
+
+.como-jugar #interface-list {position:absolute; left:752px; top:72px; width:180px;}
+.como-jugar #interface-list a {cursor: help; background: url("../img/guia-empezando/interface-numbers.gif") 0 0 no-repeat;font-size:12px; line-height:14px; display:block; padding:8px 0 6px 27px;}
+.como-jugar #interface-list a span { font-size:11px; display:block; }					
+.como-jugar #interface-list .l-01 {background-position:0 8px;}
+.como-jugar #interface-list .l-02 {background-position:0 -30px;}
+.como-jugar #interface-list .l-03 {background-position:0 -68px;}
+.como-jugar #interface-list .l-04 {background-position:0 -104px;}
+.como-jugar #interface-list .l-05 {background-position:0 -142px;}
+.como-jugar #interface-list .l-06 {background-position:0 -180px;}
+.como-jugar #interface-list .l-07 {background-position:0 -218px;}
+.como-jugar #interface-list .l-08 {background-position:0 -256px;}
+.como-jugar #interface-list .l-09 {background-position:0 -595px;}
+.como-jugar #interface-list .l-10 {background-position:0 -633px;}
+.como-jugar #interface-list .l-11 {background-position:0 -671px;}
+.como-jugar #interface-list .l-12 {background-position:0 -709px;}
+.como-jugar #interface-list .l-13 {background-position:0 -747px;}
+.como-jugar #interface-list .l-14 {background-position:0 -785px;}
+.como-jugar #interface-list .l-15 {background-position:0 -845px;}
+.como-jugar #interface-list .l-16 {background-position:0 -861px;}
+
+.como-jugar #interface-list .l-01:hover, .como-jugar #interface-list .l-01-hover {background-position:0 -292px; color:#fff;}
+.como-jugar #interface-list .l-02:hover, .como-jugar #interface-list .l-02-hover {background-position:0 -330px; color:#fff;}
+.como-jugar #interface-list .l-03:hover, .como-jugar #interface-list .l-03-hover {background-position:0 -368px; color:#fff;}
+.como-jugar #interface-list .l-04:hover, .como-jugar #interface-list .l-04-hover {background-position:0 -404px; color:#fff;}
+.como-jugar #interface-list .l-05:hover, .como-jugar #interface-list .l-05-hover {background-position:0 -442px; color:#fff;}
+.como-jugar #interface-list .l-06:hover, .como-jugar #interface-list .l-06-hover {background-position:0 -480px; color:#fff;}
+.como-jugar #interface-list .l-07:hover, .como-jugar #interface-list .l-07-hover {background-position:0 -518px; color:#fff;}
+.como-jugar #interface-list .l-08:hover, .como-jugar #interface-list .l-08-hover {background-position:0 -556px; color:#fff;}
+.como-jugar #interface-list .l-09:hover, .como-jugar #interface-list .l-09-hover {background-position:0 -895px; color:#fff;}
+.como-jugar #interface-list .l-10:hover, .como-jugar #interface-list .l-10-hover {background-position:0 -933px; color:#fff;}
+.como-jugar #interface-list .l-11:hover, .como-jugar #interface-list .l-11-hover {background-position:0 -971px; color:#fff;}
+.como-jugar #interface-list .l-12:hover, .como-jugar #interface-list .l-12-hover {background-position:0 -1009px; color:#fff;}
+.como-jugar #interface-list .l-13:hover, .como-jugar #interface-list .l-13-hover {background-position:0 -1047px; color:#fff;}
+.como-jugar #interface-list .l-14:hover, .como-jugar #interface-list .l-14-hover {background-position:0 -1085px; color:#fff;}
+.como-jugar #interface-list .l-15:hover, .como-jugar #interface-list .l-15-hover {background-position:0 -1123px; color:#fff;}
+.como-jugar #interface-list .l-16:hover, .como-jugar #interface-list .l-16-hover {background-position:0 -1161px; color:#fff;}
+
+.como-jugar .htp-2 { background: url("../img/guia-como-jugar/bg-htp2.jpg") 100% 0 no-repeat; }
+.como-jugar .htp-2 .guide-sub-desc { padding-right:25px; }
+.como-jugar .parchment { width:449px; margin-top:39px; }
+.como-jugar .parchment-tall { background:url('../img/guia-como-jugar/parchment-tall.png') 50% 0 no-repeat; }
+.como-jugar .parchment-short { background:url('../img/guia-como-jugar/parchment-short.png') 50% 0 no-repeat; }
+
+.como-jugar .parchment-interior { padding:52px 57px 50px 52px; color:#967648;}
+.como-jugar .parchment-interior b { color:#FFFFFF; }
+
+.como-jugar .left-col { float:left; width:490px;  }
+.como-jugar .right-col { float:right; width:490px;  }
+
+.como-jugar .parchment .guide-content-subtitle { margin:0; }
+.como-jugar .parchment p { line-height:18px; margin:15px 0; }
+
+
+.como-jugar .character-image { background:url('../img/guia-como-jugar/characters.png'); width:427px; height:344px; margin-left:48px; }
+
+.como-jugar .section2, .como-jugar .section2 .left-col, .como-jugar .section3 .left-col  { position:relative; }
+ 
+.como-jugar .section2 .clear { padding:40px; }
+
+.como-jugar .section2 .media-frame { margin-top:77px; margin-left:10px }
+
+.como-jugar .talents-image { background:url('../img/guia-como-jugar/talents.png'); width:684px; height:624px; position:absolute; right:0; top:-252px }
+.como-jugar .talent-screenshot { width:401px; height:197px; background:url('../img/guia-como-jugar/talent-screenshot.jpg'); margin:340px 0 0 223px; }
+
+
+.como-jugar .section3 { position:relative; background:url('../img/guia-como-jugar/bg-quests.jpg'); } 
+.como-jugar .section3-image { background:url('../img/guia-como-jugar/section3-image1.png') right no-repeat; width:614px; height:475px; position:absolute; right:0; top:-80px; }
+
+.como-jugar .section3 .clear { padding:0; }
+
+.como-jugar .section-list { padding-top:80px }
+.como-jugar .guide-content-subtitle table { margin-left:-5px; }
+.como-jugar .section3 .section-list {  padding-left:50px; }
+.como-jugar .section-list .left-col, .como-jugar .section-list .right-col { width:210px; }
+.como-jugar .section-list .column-break { clear:both; }
+
+.como-jugar .section-list .guide-content-subtitle { margin-left:0; } 
+
+.como-jugar .section-list-image { position:relative; width:210px; background-position:50%; background-repeat:no-repeat; width:210px; } 
+.como-jugar .section-list .img1 { background-image:url('../img/guia-como-jugar/section3-list-image1.png'); height:243px; top:-64px; margin-bottom:-64px; }
+.como-jugar .section-list .img2 { background-image:url('../img/guia-como-jugar/section3-list-image2.png'); height:179px; }
+.como-jugar .section-list .img3 { background-image:url('../img/guia-como-jugar/section3-list-image3.png'); height:191px; top:-24px; }
+.como-jugar .section-list .img4 { background-image:url('../img/guia-como-jugar/section3-list-image4.png'); height:203px; }
+.como-jugar .section-list .img5 { background-image:url('../img/guia-como-jugar/section3-list-image5.png'); height:127px; }
+.como-jugar .section-list .img6 { background-image:url('../img/guia-como-jugar/section3-list-image6.png'); height:186px; }
+.como-jugar .section-list .img7 { background-image:url('../img/guia-como-jugar/section3-list-image7.png'); height:164px; }
+
+.como-jugar .icon-bullet { width:53px; height:45px; background:url('../img/guia-como-jugar/htp-icons.png') no-repeat; float:left;  }
+.como-jugar .bullet1 { background-position:-7px -6px; }
+.como-jugar .bullet2 { background-position:-7px -88px; }
+.como-jugar .bullet3 { background-position:-7px -170px; }
+.como-jugar .bullet4 { background-position:-7px -253px; }
+.como-jugar .bullet5 { background-position:-7px -335px; }
+.como-jugar .bullet6 { background-position:-7px -417px; }
+.como-jugar .bullet7 { background-position:-7px -499px; }
+.como-jugar .bullet8 { background-position:-7px -582px; }
+.como-jugar .bullet9 { background-position:-7px -664px; }
+.como-jugar .bullet10 { background-position:-7px -746px; }
+.como-jugar .bullet11 { background-position:-7px -832px; }
+
+.como-jugar .bullet-desc { clear:left; color:#967648; padding:10px 0 50px; }
+
+.como-jugar .quest-type-title { color:#e9bd7f; text-transform:uppercase; padding:0 0 7px 26px; line-height:20px; background:url('../img/guia-como-jugar/quest-icons.gif') no-repeat; }
+
+.como-jugar .quest-type .img1 { background-position:0 -5px; }
+.como-jugar .quest-type .img2 { background-position:0 -32px; }
+.como-jugar .quest-type .img3 { background-position:0 -60px; }
+.como-jugar .quest-type .img4 { background-position:0 -88px; }
+.como-jugar .quest-type .img5 { background-position:0 -116px; }
+.como-jugar .quest-type .img6 { background-position:0 -148px; }
+.como-jugar .quest-type .img7 { background-position:0 -177px; }
+
+.como-jugar .quest-type-desc { padding-bottom:20px; }
+
+
+.como-jugar .section4 { background:url('../img/guia-como-jugar/bg-inv.png') no-repeat; }
+.como-jugar .section4 .section-list {  padding-right:50px; padding-left:0; }
+
+.como-jugar .section5 { background:url('../img/guia-como-jugar/bg-groups.jpg') no-repeat; }
+.como-jugar .section5 .parchment { margin-top:-10px;  }
+.como-jugar .section5 .parchment-interior { padding-top:40px;  }
+
+.como-jugar .section5 .bullet-desc { padding-bottom:24px; }
+
+.como-jugar .section5 .image-buffer { padding-top:457px; }
+
+.como-jugar .aside { color:#73634c; font-style:italic; display:block; text-transform:none; font-size:14px; margin:0; }
+
+/* JUGANDO JUNTOS */
+.jugando-juntos #content .content-top { background: url("../img/guia-jugando-juntos/bg.jpg") 0 0 no-repeat }
+
+.jugando-juntos .container { color: #967648; margin: 0 auto; width: 815px; padding: 40px 40px 0 40px; background: url("../img/guia-jugando-juntos/container.jpg") 50% 0 no-repeat }
+.jugando-juntos .container ul { float: left; width: 50%; line-height: 175% }
+.jugando-juntos .container li { padding: 0 50px 50px 75px; position: relative }
+.jugando-juntos .container h3 { color: #e9bd7f; text-transform: uppercase; font-weight: normal; font-size: 14px; margin-bottom: 5px }
+.jugando-juntos .container .icon { width: 60px; height: 75px; position: absolute; top: 0; left: 0 }
+
+.jugando-juntos .box .guide-content-subtitle { background: url("../img/guia-jugando-juntos/icons.png") 0 0 no-repeat }
+
+/* chat */
+.jugando-juntos #chat { padding-top: 75px; background: url("../img/guia-jugando-juntos/bg-chat.jpg") 100% 0 no-repeat }
+.jugando-juntos #chat .chat-other { padding: 0 50px; height: 700px; background: url("../img/guia-jugando-juntos/bg-chat-2.jpg") 0 0 no-repeat }
+.jugando-juntos #chat .chat-other .dialog { width: 250px; height: 200px; padding: 20px; cursor: help; position: absolute; bottom: 0; background: url("../img/guia-jugando-juntos/chat-boxes.jpg") 0 0 no-repeat }
+.jugando-juntos #chat .chat-other .dialog h3 { color: #d28000; text-transform: uppercase; font-weight: normal; line-height: 100%; padding: 0 0 10px 25px }
+.jugando-juntos #chat .chat-other .dialog:hover { color:#E9BD7F }
+.jugando-juntos #chat .chat-other .dialog:hover h3 { color: #fff }
+.jugando-juntos #chat .chat-other .dialog.d1 { left: 50px }
+.jugando-juntos #chat .chat-other .dialog.d1:hover { background-position: 0 -241px }
+.jugando-juntos #chat .chat-other .dialog.d2 { background-position: -301px 0; left: 350px }
+.jugando-juntos #chat .chat-other .dialog.d2:hover { background-position: -301px -241px }
+.jugando-juntos #chat .chat-other .dialog.d3 { background-position: -602px 0; left: 650px }
+.jugando-juntos #chat .chat-other .dialog.d3:hover { background-position: -602px -241px }
+.jugando-juntos #chat .chat-other .bubble { position: absolute; display: none; background: transparent url("../img/guia-jugando-juntos/chat-bubbles.png") 0 0 no-repeat }
+.jugando-juntos #chat .chat-other #bubble-1-1 { width: 99px; height: 40px; background-position: 0 -102px; left: 616px; top: 106px }
+.jugando-juntos #chat .chat-other #bubble-1-2 { width: 163px; height: 14px; background-position: 0 -87px; left: 37px; top: 374px }
+.jugando-juntos #chat .chat-other #bubble-2-1 { width: 202px; height: 40px; background-position: 0 -46px; left: 62px; top: 116px }
+.jugando-juntos #chat .chat-other #bubble-2-2 { width: 288px; height: 14px; background-position: 0 -31px; left: 35px; top: 388px }
+.jugando-juntos #chat .chat-other #bubble-3-1 { width: 327px; height: 30px; left: 35px; top: 345px }
+.jugando-juntos #chat .chat-channel .guide-content-subtitle { background-position: 0 0 }
+.jugando-juntos #chat .chat-voice .guide-content-subtitle { background-position: 0 -55px }
+.jugando-juntos #chat .chat-other .guide-content-subtitle { background-position: 0 -110px }
+
+/* party and raids */
+.jugando-juntos #party { padding-top: 75px; background: url("../img/guia-jugando-juntos/bg-party.jpg") 0 0 no-repeat;}
+.jugando-juntos #party .left { padding: 0 0 0 50px; width: 429px; float: left; }
+.jugando-juntos #party .right { padding: 0 50px 0 0; width: 420px; float: right;}
+.jugando-juntos #party .party-info .media-frame {margin-top:330px;}
+.jugando-juntos #party .party-rules {width:429px; background: url("../img/guia-jugando-juntos/group-rules-content.jpg") 0 0 no-repeat; padding-top:28px;}
+.jugando-juntos #party .party-rules .icon { width:43px; height:50px; position: absolute; top:0; left: 0; background: url("../img/guia-jugando-juntos/party-rules.png") 0 0 no-repeat }
+.jugando-juntos #party .party-rules .ffa .icon { background-position: 0 4px }
+.jugando-juntos #party .party-rules .looter .icon { background-position: -44px -180px }
+.jugando-juntos #party .party-rules .greed .icon { background-position: 0 -244px }
+.jugando-juntos #party .party-rules .personal .icon { background-position: 0 -313px }
+.jugando-juntos #party .party-rules .robin .icon { background-position: -44px -54px  }
+.jugando-juntos #party .party-rules .group .icon { background-position: 0 -119px }
+.jugando-juntos #party .party-rules ul {margin:0 0 0 26px;}
+.jugando-juntos #party .party-rules h3 {color: #e9bd7f; text-transform: uppercase; font-weight: normal; font-size: 14px; margin:0 0 3px 69px; width:303px; display:block; }
+.jugando-juntos #party .party-rules li { padding: 0 0 21px 0; position:relative; min-height:55px;}
+.jugando-juntos #party .party-rules p { width:303px !important; display:block; font-size:11px; line-height:14px; margin:0 0 0 69px; }
+.jugando-juntos #party .party-form .guide-content-subtitle { background-position: 0 -165px }
+.jugando-juntos #party .party-leader .guide-content-subtitle { background-position: 0 -220px }
+.jugando-juntos #party .party-rule {min-height:0; padding-bottom:40px;}
+.jugando-juntos #party .party-rule .guide-content-subtitle { background-position: 0 -275px }
+
+/* guilds */
+.jugando-juntos #guild { clear:both; padding-top: 75px; background: url("../img/guia-jugando-juntos/bg-guild.jpg") 0 0 no-repeat }
+.jugando-juntos #guild .guild-tabard .guide-content-subtitle { background-position: 0 -330px }
+.jugando-juntos #guild .guild-bank .guide-content-subtitle { background-position: 0 -440px }
+.jugando-juntos #guild .guild-chat .guide-content-subtitle { background-position: 0 -495px }
+.jugando-juntos #guild .guild-advance .guide-content-subtitle { background-position: 0 -550px }
+
+/* guild leader */
+.jugando-juntos #guild .guild-leader { padding-bottom:75px }
+.jugando-juntos #guild .guild-leader .guide-content-subtitle { background-position: 0 -385px }
+.jugando-juntos #guild .guild-leader .leader-wrapper { width:420px; float:right; padding-right:50px }
+.jugando-juntos #guild .guild-leader .leader-p { font-size:12px }
+.jugando-juntos #guild .guild-leader .media-frame { position:static; float:left; margin:0 0 50px 50px }
+
+/* guild roles */
+.jugando-juntos #guild .guild-roles { padding:40px 10px 40px 22px; background:url('../img/guia-jugando-juntos/leader-content.jpg') no-repeat -12px 0 }
+.jugando-juntos #guild .guild-roles .icon { width: 60px; height: 60px; display:block; background: url("../img/guia-jugando-juntos/guild-roles.png") 0 0 no-repeat; float:left }
+.jugando-juntos #guild .guild-roles .ranks .icon { background-position: 0 -3px; float:left }
+.jugando-juntos #guild .guild-roles .promote .icon { background-position: 0 -108px }
+.jugando-juntos #guild .guild-roles .manage .icon { background-position: 0 -201px }
+.jugando-juntos #guild .guild-roles .leader .icon { background-position: 0 -321px }
+.jugando-juntos #guild .guild-roles h3 { color: #e9bd7f; text-transform: uppercase; font-weight: normal; font-size: 14px; margin-bottom: 3px; width:311px; display:block; float:left }
+.jugando-juntos #guild .guild-roles li { padding: 0 0 21px 0 }
+.jugando-juntos #guild .guild-roles p { width:311px; display:block; float:left; font-size:11px; line-height:14px; margin:0 }
+
+/* friends */
+.jugando-juntos #friends { min-height:580px; padding: 50px 0; position: relative; background: url("../img/guia-jugando-juntos/bg-friends.jpg") 0 85% no-repeat }
+.jugando-juntos #friends .friends { position: absolute; top: 220px; right: 50px; width: 355px; min-height: 375px; padding: 35px; background: url("../img/guia-jugando-juntos/friends-box.jpg") 0 0 no-repeat }
+.jugando-juntos #friends .friends .guide-content-subtitle { background: none; padding: 0 0 10px 0; height: auto }
+.jugando-juntos #friends .friends-list { padding-left: 185px; padding-bottom: 50px }
+.jugando-juntos #friends .real-id { float: right; margin-left: 15px;}
+
+/* JUEGO AVANZADO */
+.juego-avanzado #content .content-top { background: url("../img/guia-juego-avanzado/bg.jpg") 0 0 no-repeat; }
+
+.juego-avanzado .box .guide-content-subtitle { background: url("../img/guia-juego-avanzado/icons.png") 0 0 no-repeat; }
+
+/* Dungeons */
+.juego-avanzado #dungeons { padding-top: 50px; min-height: 900px; position: relative; background: url("../img/guia-juego-avanzado/bg-dungeons.jpg") 0 50% no-repeat; }
+.juego-avanzado #dungeons .dungeon-info { width: 375px; padding: 25px; position: absolute; top: 0; right: 50px; background: url("../img/guia-juego-avanzado/dungeon-box.jpg") 0 0 no-repeat; }
+.juego-avanzado #dungeons .dungeon-info .box { height: auto; min-height: inherit; padding-bottom: 25px; }
+.juego-avanzado #dungeons .media-frame { position: absolute; left: 50px; top: 675px; }
+.juego-avanzado #dungeons .dungeon-instance .guide-content-subtitle { background-position: 0 0; }
+.juego-avanzado #dungeons .dungeon-monsters .guide-content-subtitle { background-position: 0 -55px; }
+.juego-avanzado #dungeons .dungeon-wipe .guide-content-subtitle { background-position: 0 -110px; }
+.juego-avanzado #dungeons .dungeon-loot .guide-content-subtitle { background-position: 0 -165px; }
+.juego-avanzado #dungeons .dungeon-finder .guide-content-subtitle { background-position: 0 -220px; }
+
+/* Raids */
+.juego-avanzado #raids { padding-top: 50px; background: url("../img/guia-juego-avanzado/bg-raids.jpg") 100% 0 no-repeat; }
+.juego-avanzado #raids .raid-challenge .guide-content-subtitle { background-position: 0 -275px; }
+.juego-avanzado #raids .raid-experience .guide-content-subtitle { background-position: 0 -330px; }
+.juego-avanzado #raids .raid-reward .guide-content-subtitle { background-position: 0 -385px; }
+
+/* Pvp */
+.juego-avanzado #pvp { padding-top: 50px; background: url("../img/guia-juego-avanzado/bg-pvp.jpg") 100% 0 no-repeat; }
+.juego-avanzado #pvp .pvp-world .guide-content-subtitle { background-position: 0 -440px; }
+.juego-avanzado #pvp .pvp-bg .guide-content-subtitle { background-position: 0 -495px; }
+.juego-avanzado #pvp .pvp-objective .guide-content-subtitle { background-position: 0 -550px; }
+.juego-avanzado #pvp .pvp-arena .guide-content-subtitle { background-position: 0 -605px; }
+.juego-avanzado #pvp .pvp-duels .guide-content-subtitle { background-position: 0 -660px; }
+
+/* New */
+.juego-avanzado #finale { padding-top: 50px; background: url("../img/guia-juego-avanzado/bg-new.jpg") 100% 0 no-repeat; }
+
+.esconder {display:none}
+.mostrando {display:block}
